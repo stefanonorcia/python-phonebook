@@ -4,6 +4,5 @@ class Contact:
         self.lastname = lastname
         self.number = number
 
-#    def stringaContatto(self):
-#        str = self.nome +" "+ self.cognome +" "+ self.numero
-#        return str
+    def __str__(self):
+        return self.name + " " + self.lastname + " " + self.number
