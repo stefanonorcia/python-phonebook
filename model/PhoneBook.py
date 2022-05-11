@@ -11,3 +11,5 @@ class PhoneBook:
         def addContact(self, name, lastname, number):
             self.contacts.append(Contact(name, lastname, number))
 
+        def deleteContact(self, position):
+            self.contacts.pop(position)
