@@ -13,3 +13,6 @@ class PhoneBook:
 
         def deleteContact(self, position):
             self.contacts.pop(position)
+
+        def contactList(self):
+            return "(" + str(self) + ")"
