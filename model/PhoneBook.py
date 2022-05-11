@@ -13,3 +13,10 @@ class PhoneBook:
 
         def deleteContact(self, position):
             self.contacts.pop(position)
+
+        def getContacts(self):
+            for contact in self.contacts:
+                text = f"({contact.name}, {contact.lastname}, {contact.number}"
+                print(text)
+
+
