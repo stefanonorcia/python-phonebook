@@ -16,4 +16,9 @@ class PhoneBook:
 
         def contactList(self):
             return "(" + str(self) + ")"
-        
+
+        def searchContact(self, key):
+            for contact in self.contacts:
+                if contact.name == key or contact.lastname == key or contact.number == key :
+                    return str(contact)
+
